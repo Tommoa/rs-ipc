@@ -5,7 +5,7 @@ authors = ["Tom Almeida <tommoa256@gmail.com>"]
 readme = "README.md"
 license = "MIT"
 description = "A rust library for interprocess communication."
-repository = "https://github.com/Tommoa/ipc-rs"
+repository = "https://github.com/Tommoa/rs-ipc"
 
 [dependencies]
 libc = "0.2"
