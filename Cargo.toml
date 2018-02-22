@@ -1,0 +1,21 @@
+[package]
+name = "ipc"
+version = "0.1.0"
+authors = ["Tom Almeida <tommoa256@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+description = "A rust library for interprocess communication."
+repository = "https://github.com/Tommoa/ipc-rs"
+
+[dependencies]
+libc = "0.2"
+log = "0.4"
+serde = "1.0"
+serde_derive = "1.0"
+rmp-serde = "0.13"
+tokio-io = "0.1"
+futures = "0.1"
+
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3", features = ["debug", "ioapiset", "minwinbase", "handleapi", "namedpipeapi", "winnt", "fileapi", "winsock2", "ws2def"] }
+bytes = "0.4"
